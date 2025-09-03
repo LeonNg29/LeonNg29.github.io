@@ -1,0 +1,61 @@
+/* styles.css - Challenge #1 (Skeleton) */
+
+* {
+background-color: rgb(229, 190, 229);
+font-family: Arial, Helvetica, sans-serif;
+font-size: 50px;
+
+}
+
+.site-header {
+    text-align: center;
+    margin: auto;
+}
+
+h1 {
+    color: purple;
+    font-size: 100px;
+
+}
+
+.tagline {
+    font-style: italic;
+    text-align: center;
+    margin-top:0px;
+}
+
+img { 
+    display:block;
+    margin: auto;
+    border:5px solid black;
+    border-radius: 10%;
+    width: 40%;
+    height: 40%;
+
+}
+
+
+
+.about {
+    font-size: 50px;
+}
+
+
+section.action { 
+    display:flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    text-align:center; 
+}
+
+.buy-tickets {
+    background-color: green;
+    border-color: aqua;
+    border:5px aqua solid; 
+}
+
+.make-donation {
+    background-color: blue;
+    border:5px red solid; 
+}

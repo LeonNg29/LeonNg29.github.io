@@ -1,0 +1,147 @@
+/* Its always width first */
+
+* {
+    margin: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #c8cdde;
+}
+
+.container {
+    /* div by default, display value is block, for elements with display value of block, we can do text align, so it will grab all the child elements and horizontally center them */
+    text-align: center;
+
+    /* margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px; */
+
+    /* margin shorthand: top right bottom left (CW) */
+    /* auto basically is to horizontally center */
+    margin: 20px auto 0 auto;
+
+    /* width of an element, includes content + padding + border (same applies for height) */
+
+    /* if the web page is viewed in a very big screen, container width still 800px */
+    max-width: 800px;
+}
+
+
+
+/*child selector*/
+
+.site-header > h1 {
+    color: rgb(210, 2, 71);
+    font-size: 3em;
+}
+
+.tagline {
+    font-style: italic;
+    color: grey;
+}
+
+/* line height gives extra spaces between letters/words/lines */
+.about {
+    text-align: left;
+    line-height: 1.5;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/* apply top margin to all instances of paragraph (look through the code */
+
+p { 
+    margin-top: 10px;
+}
+
+
+/* to add the border for the image, check with prof why use the div and not the iimage id */
+
+.mascot-placeholder { 
+    border:2px solid black;
+    background-color: white;
+    border-radius: 20px;
+    width: 220px;
+    height: 220px;
+
+    /* vertically center the image */
+    display: flex;
+    justify-content: center; /*horizontal centering of the child (image)*/
+    align-items: center; /*vertically center the child (image) */
+    margin: auto;
+}
+
+#mascot-image {
+    height: 90%;
+}
+
+main {
+    margin-top: 30px;
+}
+
+.hero { 
+    margin-bottom: 30px;
+}
+
+.buy-tickets { 
+    /* top & bottom, left & right */
+    padding: 10px 14px;
+    background-color: rgb(69, 174, 69);
+    color: white;
+    font-size: 1em;
+    font-weight: 600; /*make it more bold*/
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgb(0, 153, 255); /*for the glowing effect*/
+    margin-right: 20px;
+
+    /* 120ms = 0.12 seconds, ease is a timing function - start slow speed up then slow down again / when there is mouseover, the colour smoothly fades instead of changing instantly */
+    transition: background-color 120ms ease, transform 80 ms ease 
+
+
+}
+
+/* for the hovering effect */
+.buy-tickets:hover {
+    background-color: rgb(5, 44, 5);
+    transform: scale(1.1); /* for the slight glow */
+    cursor: pointer;
+}
+
+.make-donation { 
+    /* top & bottom, left & right */
+    padding: 10px 14px;
+    background-color: rgb(69, 87, 174);
+    color: white;
+    font-size: 1em;
+    font-weight: 600; /*make it more bold*/
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgb(238, 0, 255); /*for the glowing effect*/
+    margin-right: 20px;
+    margin-top: 20px;
+
+    /* 120ms = 0.12 seconds, ease is a timing function - start slow speed up then slow down again / when there is mouseover, the colour smoothly fades instead of changing instantly */
+    transition: background-color 120ms ease, transform 80 ms ease 
+
+
+}
+
+/* for the hovering effect */
+.make-donation:hover {
+    background-color: rgb(5, 8, 44);
+    transform: scale(1.1); /* for the slight glow */
+    cursor: pointer;
+}
+
+.site-footer { 
+    margin-top: 30px;
+    border-top: 1px solid rgb(132, 117, 117);
+    padding-top: 20px;
+    color:rgb(141, 121, 121);
+}
+
+.actions { 
+    margin-top: 20px;
+}
